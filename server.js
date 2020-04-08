@@ -59,11 +59,11 @@ app.post("/signin", (req, res) => {
   signin.handleSignin(req, res, db, bcrypt);
 });
 
-app.post("/register", (req, rest) => {
+app.post("/register", (req, req) => {
   register.handleRegister(req, res, db, bcrypt);
 });
 
-app.get("/profile/:id", (req, res, db) => {
+app.get("/profile/:id", (req, res) => {
   profile.handleProfileGet(req, res, db);
 });
 
