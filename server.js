@@ -7,8 +7,7 @@ const register = require("./controllers/register");
 const signin = require("./controllers/signin");
 const image = require("./controllers/image");
 const profile = require("./controllers/profile");
-const { db } = require("pg");
-db = knex({
+const db = knex({
   client: "pg",
   connection: {
     connectionString: process.env.DATABASE_URL,
