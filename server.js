@@ -16,14 +16,14 @@ const db = knex({
   },
 });
 
-console.log(
-  db
-    .select("*")
-    .from("users")
-    .then((data) => {
-      // console.log(data);
-    })
-);
+// console.log(
+//   db
+//     .select("*")
+//     .from("users")
+//     .then((data) => {
+//       // console.log(data);
+//     })
+// );
 
 const app = express();
 
